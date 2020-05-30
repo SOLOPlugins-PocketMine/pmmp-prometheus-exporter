@@ -1,0 +1,17 @@
+{
+	"name": "solo5star/pmmp-prometheus-exporter",
+	"description": "Prometheus metrics exporter for PocketMine-MP",
+	"type": "library",
+	"authors": [
+		{
+			"name": "solo5star",
+			"email": "solo_5@naver.com"
+		}
+	],
+	"require": {
+		"php": "^7.2",
+		"endclothing/prometheus_client_php": "^1.0",
+		"amphp/http-server": "^2.0",
+		"amphp/http-server-router": "^1.0"
+	}
+}

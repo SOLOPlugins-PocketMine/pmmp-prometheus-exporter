@@ -1,0 +1,5 @@
+name: pmmp-prometheus-exporter
+version: 1.0.0
+api: 3.9.0
+author: solo5star
+main: solo5star\promexporter\PrometheusExporter

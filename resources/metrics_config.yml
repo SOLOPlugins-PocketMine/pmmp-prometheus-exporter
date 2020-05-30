@@ -1,0 +1,28 @@
+# PocketMine-MP Prometheus Exporter
+# author: solo5star
+
+host: "0.0.0.0"
+# Port Setting. By default, set to 9655.
+# Or editing this, recommend 9100-9999 (Exporter generally use)
+port: 9655
+
+# Enable or disable metrics.
+# Basically all metrics is enabled.
+enable_metrics:
+    memory_heap_bytes: true
+    memory_main_thread_bytes: true
+    memory_maximum_bytes: true
+    memory_total_bytes: true
+    network_download_bytes: true
+    network_upload_bytes: true
+    player_online_count: true
+    player_total_count: true
+    thread_count: true
+    ticks_per_second: true
+    tick_usage: true
+    world_chunk_loaded: true
+    world_disk_usage_bytes: true
+    world_entity_count: true
+    world_loaded: true
+    world_player_count: true
+    world_tick_rate: true
