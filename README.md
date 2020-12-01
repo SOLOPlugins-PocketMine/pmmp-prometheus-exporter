@@ -24,11 +24,27 @@ Reference: Prometheus architecture
 <br>
 
 ## So what should I do to setup monitoring system?
-Plugin will work without any dependency. But it is not intended.
+First, you have to install [**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/) + [**Grafana**](https://grafana.com/docs/grafana/latest/getting-started/getting-started/)
 
-You have to setup [**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/) + [**Grafana**](https://grafana.com/docs/grafana/latest/getting-started/getting-started/) if you want to setup perfect-monitoring-system.
+After finished installation, add this plugin to plugins folder.
+
+When server started, plugin will open prometheus exporter on 9655 port.
+
+<br>
+
+Second, register the exporter on `prometheus.yml`.
+
+```yml
+scrape_configs:
+  - job_name: 'pmmp'
+    static_configs:
+      - targets: ['<server-ip>:9655']
+```
+
+<br>
 
 This is an example using [**Prometheus**](https://prometheus.io/docs/prometheus/latest/getting_started/) + [**Grafana**](https://grafana.com/docs/grafana/latest/getting-started/getting-started/).
+
 ![Grafana-Example](https://raw.githubusercontent.com/solo5star/pmmp-prometheus-exporter/master/pictures/Grafana-Example.png)
 
 <br>
